@@ -21,7 +21,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
         backgroundColor: Colors.cyan.shade50,
         title: Padding(
           padding: const EdgeInsets.only(
-              top:30,
+              top: 30,
               left: 26),
 
           child: Text(
@@ -45,7 +45,11 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
-                  boxShadow: [BoxShadow(blurRadius: 8, color: Colors.black12)],
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 8,
+                      color: Colors.black12)
+                  ],
                 ),
 
                 child: ListView.builder(
@@ -57,7 +61,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
                       activeColor: Colors.green,
                       checkboxShape: CircleBorder(),
                       title: Text(
-                        student.name,
+                        '${index + 1}. ${student.name}',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
